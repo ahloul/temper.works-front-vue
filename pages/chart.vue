@@ -42,7 +42,7 @@ export default class ClassifiersDetailsInformation extends Vue {
   async getData() {
     const response: RerentionCurveWeek[] = (await axios.get<RerentionCurveWeek[]>('http://localhost:8000/api/retention-curves/index')).data;
     const datasets: ChartDataSets[] = [];
-    const sss = await axios.get('http://localhost:8000/api/retention-curves/index')
+    const sss = await axios.get('http://localhost:8182/api/retention-curves/index')
     console.log(sss.data)
     for (const data of response) {
       console.log(1)
