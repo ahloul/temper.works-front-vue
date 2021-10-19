@@ -1,7 +1,9 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL || 'http://127.0.0.1:8182'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'temper-front-vue',
@@ -38,6 +40,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

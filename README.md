@@ -15,4 +15,10 @@ $ yarn start
 
 Go to http://localhost:3000/chart
 ```
-![alt text](chart.png "Title")
+## Set base Url
+```bash
+# run in same terminal app or can change it nuxt.config.js file
+$ export BASE_URL="http://127.0.0.1:8182" 
+ ```
+
+![alt text](chart.png "chart")
